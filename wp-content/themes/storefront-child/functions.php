@@ -2,6 +2,9 @@
 
 function grupp_projekt_post_types(){
     register_post_type('butik', array(
+        'supports' => array('title', 'editor', 'excerpt', 'custom-fields'),
+        'rewrite' => array('slug', 'butiker'),
+        'has_archive' => true,
         'public' => true,
         'show_in_rest' => true,
         'labels' => array(
