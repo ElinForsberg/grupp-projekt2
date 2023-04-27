@@ -1,5 +1,6 @@
 <?php
 
+
 // Tar bort header från checkout
 function remove_header_from_checkout()
 {
@@ -87,3 +88,4 @@ function change_soldout($text, $product)
 
     return $text;
 }
+
