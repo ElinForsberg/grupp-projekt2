@@ -1,6 +1,5 @@
 <?php
 
-
 // Tar bort header från checkout
 function remove_header_from_checkout()
 {
@@ -88,4 +87,11 @@ function change_soldout($text, $product)
 
     return $text;
 }
+
+function register_store_styles(){
+    wp_enqueue_style('store_styles', get_template_directory_uri() . "./style.css");
+}
+
+add_action('wp_enqueue_scripts', 'register_store_styles');
+
 
