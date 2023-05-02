@@ -1,18 +1,32 @@
 <?php
 
-get_header( 'shop' ); 
+get_header('shop');
 
 $butiker = new WP_Query(array(
     'post_per_page' => 5,
     'post_type' => 'butik',
 ));
+    ?>
+    <ul class="store-list">
+        <?php
+while ($butiker->have_posts()) {
 
- while ( $butiker -> have_posts() ) {
+        ?>
+        <li class="store-item">
+            <?php
+            $butiker->the_post();
+            ?>
+            <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
-            ?><h1><?php $butiker -> the_title(); ?></h1><?php
-            $butiker -> the_post();
+            <?php
+            the_content();
 
-			$butiker -> the_content();
+            ?>
+        </li>
+    <?php
+}
 
- }
-get_footer();
+    ?>
+    </ul>
+    <?php
+    get_footer();
