@@ -39,7 +39,13 @@ wp-content/*
 # unless explicitly whitelisted at the end of this file
 !wp-content/mu-plugins/*
 wp-content/plugins/*
+!wp-content/plugins/drone-shipping
 !wp-content/themes/*
+
+
+#
+wp-config.php
+wp-config-sample.php
 
 # ignore all files starting with . or ~
 .*
