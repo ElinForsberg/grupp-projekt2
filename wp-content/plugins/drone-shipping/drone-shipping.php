@@ -56,46 +56,6 @@
 
 
            public function calculate_shipping( $package = array() ) {
-//     $weight = 0;
-//  $cost = 0;
-//  $country = $package["destination"]["country"];
-//  foreach ($package['contents'] as $item_id => $values) {
-//  $_product = $values['data'];
-//  $weight = $weight + $_product->get_weight() * $values['quantity'];
-//  }
-//  $weight = wc_get_weight($weight, 'kg');
-//  if ($weight <= 5) {
-//  $cost = floatval($this->get_option ('price1'));
-//  } elseif ($weight <= 10) {
-//  $cost = floatval($this->get_option ('price2'));
-//  } else {
-//  $cost = floatval($this->get_option ('price3'));
-//  }
-//  $countryZones = array(
-//  'SE' => 1,
-//  'NO' => 2,
-//  'DK' => 3
-//  );
-//  $zonePrices = array(
-//  1 => 30,   
-//  2 => 50,
-//  3 => 70
-//  );
-//  $zoneFromCountry = $countryZones[$country];
-//  $priceFromZone = $zonePrices[$zoneFromCountry];
-//  $cost += $priceFromZone;
-//  $rate = array(
-//  'id' => $this->id,
-//  'label' => $this->title,
-//  'cost' => $cost
-//  );
-//  $this->add_rate($rate);
-//  }
-//  }
-//  }
-//  }
-
-
 
 $weight = 0;
 $cost = 0;
