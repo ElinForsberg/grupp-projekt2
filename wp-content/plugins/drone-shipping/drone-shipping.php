@@ -5,7 +5,9 @@
  * Description: Drone shipping plugin
  */
 
+
 add_action('woocommerce_shipping_init', 'drone_shipping_init');
+
 
 
 function drone_shipping_init()

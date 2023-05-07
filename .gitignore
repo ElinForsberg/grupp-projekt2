@@ -40,6 +40,8 @@ wp-content/*
 !wp-content/mu-plugins/*
 wp-content/plugins/*
 !wp-content/plugins/drone-shipping
+
+
 !wp-content/themes/*
 
 
